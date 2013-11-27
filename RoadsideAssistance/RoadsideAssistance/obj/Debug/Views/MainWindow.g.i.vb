@@ -44,6 +44,76 @@ Partial Public Class MainWindow
     Implements System.Windows.Markup.IComponentConnector
     
     
+    #ExternalSource("..\..\..\Views\MainWindow.xaml",35)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents cmbxIssue As System.Windows.Controls.ComboBox
+    
+    #End ExternalSource
+    
+    
+    #ExternalSource("..\..\..\Views\MainWindow.xaml",44)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents cmbxEquipment As System.Windows.Controls.ComboBox
+    
+    #End ExternalSource
+    
+    
+    #ExternalSource("..\..\..\Views\MainWindow.xaml",67)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents txtFirstName As System.Windows.Controls.TextBox
+    
+    #End ExternalSource
+    
+    
+    #ExternalSource("..\..\..\Views\MainWindow.xaml",71)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents txtLastName As System.Windows.Controls.TextBox
+    
+    #End ExternalSource
+    
+    
+    #ExternalSource("..\..\..\Views\MainWindow.xaml",75)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents txtAddress As System.Windows.Controls.TextBox
+    
+    #End ExternalSource
+    
+    
+    #ExternalSource("..\..\..\Views\MainWindow.xaml",79)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents txtCity As System.Windows.Controls.TextBox
+    
+    #End ExternalSource
+    
+    
+    #ExternalSource("..\..\..\Views\MainWindow.xaml",83)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents txtState As System.Windows.Controls.TextBox
+    
+    #End ExternalSource
+    
+    
+    #ExternalSource("..\..\..\Views\MainWindow.xaml",87)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents txtZip As System.Windows.Controls.TextBox
+    
+    #End ExternalSource
+    
+    
+    #ExternalSource("..\..\..\Views\MainWindow.xaml",106)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents txtDescription As System.Windows.Controls.TextBox
+    
+    #End ExternalSource
+    
+    
+    #ExternalSource("..\..\..\Views\MainWindow.xaml",132)
+    <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
+    Friend WithEvents txtSvcLocAddress As System.Windows.Controls.TextBox
+    
+    #End ExternalSource
+    
+    
     #ExternalSource("..\..\..\Views\MainWindow.xaml",200)
     <System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")>  _
     Friend WithEvents btnPrevious As System.Windows.Controls.Button
@@ -99,10 +169,50 @@ Partial Public Class MainWindow
      System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")>  _
     Sub System_Windows_Markup_IComponentConnector_Connect(ByVal connectionId As Integer, ByVal target As Object) Implements System.Windows.Markup.IComponentConnector.Connect
         If (connectionId = 1) Then
-            Me.btnPrevious = CType(target,System.Windows.Controls.Button)
+            Me.cmbxIssue = CType(target,System.Windows.Controls.ComboBox)
             Return
         End If
         If (connectionId = 2) Then
+            Me.cmbxEquipment = CType(target,System.Windows.Controls.ComboBox)
+            Return
+        End If
+        If (connectionId = 3) Then
+            Me.txtFirstName = CType(target,System.Windows.Controls.TextBox)
+            Return
+        End If
+        If (connectionId = 4) Then
+            Me.txtLastName = CType(target,System.Windows.Controls.TextBox)
+            Return
+        End If
+        If (connectionId = 5) Then
+            Me.txtAddress = CType(target,System.Windows.Controls.TextBox)
+            Return
+        End If
+        If (connectionId = 6) Then
+            Me.txtCity = CType(target,System.Windows.Controls.TextBox)
+            Return
+        End If
+        If (connectionId = 7) Then
+            Me.txtState = CType(target,System.Windows.Controls.TextBox)
+            Return
+        End If
+        If (connectionId = 8) Then
+            Me.txtZip = CType(target,System.Windows.Controls.TextBox)
+            Return
+        End If
+        If (connectionId = 9) Then
+            Me.txtDescription = CType(target,System.Windows.Controls.TextBox)
+            Return
+        End If
+        If (connectionId = 10) Then
+            Me.txtSvcLocAddress = CType(target,System.Windows.Controls.TextBox)
+            Return
+        End If
+        If (connectionId = 11) Then
+            Me.btnPrevious = CType(target,System.Windows.Controls.Button)
+            Return
+        End If
+        If (connectionId = 12) Then
             Me.btnSave = CType(target,System.Windows.Controls.Button)
             
             #ExternalSource("..\..\..\Views\MainWindow.xaml",201)
@@ -111,11 +221,11 @@ Partial Public Class MainWindow
             #End ExternalSource
             Return
         End If
-        If (connectionId = 3) Then
+        If (connectionId = 13) Then
             Me.btnNext = CType(target,System.Windows.Controls.Button)
             Return
         End If
-        If (connectionId = 4) Then
+        If (connectionId = 14) Then
             Me.btnExit = CType(target,System.Windows.Controls.Button)
             
             #ExternalSource("..\..\..\Views\MainWindow.xaml",203)

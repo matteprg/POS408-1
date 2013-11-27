@@ -24,6 +24,25 @@
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As RoutedEventArgs) Handles btnNext.Click
+        If txtFirstName Is Nothing Then
+            MessageBox.Show("Please fill all fields", "Error", MessageBoxButton.OK, MessageBoxImage.Warning)
+        ElseIf txtLastName Is Nothing Then
+            MessageBox.Show("Please fill all fields", "Error", MessageBoxButton.OK, MessageBoxImage.Warning)
+        ElseIf txtAddress Is Nothing Then
+            MessageBox.Show("Please fill all fields", "Error", MessageBoxButton.OK, MessageBoxImage.Warning)
+        ElseIf txtCity Is Nothing Then
+            MessageBox.Show("Please fill all fields", "Error", MessageBoxButton.OK, MessageBoxImage.Warning)
+        ElseIf txtState Is Nothing Then
+            MessageBox.Show("Please fill all fields", "Error", MessageBoxButton.OK, MessageBoxImage.Warning)
+        ElseIf txtZip Is Nothing Then
+            MessageBox.Show("Please fill all fields", "Error", MessageBoxButton.OK, MessageBoxImage.Warning)
+        ElseIf txtDescription Is Nothing Then
+            MessageBox.Show("Please enter a description of the event", "Error", MessageBoxButton.OK, MessageBoxImage.Warning)
+        ElseIf cmbxEquipment Is Nothing Then
+            MessageBox.Show("Please enter the equipment", "Error", MessageBoxButton.OK, MessageBoxImage.Warning)
+        ElseIf cmbxIssue Is Nothing Then
+            MessageBox.Show("Please enter the Issue", "Error", MessageBoxButton.OK, MessageBoxImage.Warning)
+        End If
 
     End Sub
 End Class

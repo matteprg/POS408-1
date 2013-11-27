@@ -32,7 +32,7 @@
             </StackPanel>
             <StackPanel Margin="1" Grid.Column="3" MinHeight="51">
                 <Label Content="Issue" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <ComboBox HorizontalAlignment="Left" VerticalAlignment="Center" SelectedValue="{Binding SrvCall.Issue}" TabIndex="4" Width="133" SelectedValuePath="Content">
+                <ComboBox x:Name="cmbxIssue" HorizontalAlignment="Left" VerticalAlignment="Center" SelectedValue="{Binding SrvCall.Issue}" TabIndex="4" Width="133" SelectedValuePath="Content">
                     <ComboBoxItem Content="LostKey"/>
                     <ComboBoxItem Content="Breakdown"/>
                     <ComboBoxItem Content="Accident"/>
@@ -41,7 +41,7 @@
             </StackPanel>
             <StackPanel Margin="1" Grid.Column="2" MinHeight="51">
                 <Label Content="Equipment" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                <ComboBox HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Center" Width="132" SelectedValue="{Binding SrvCall.Equipment}" SelectedValuePath="Content" TabIndex="3">
+                <ComboBox x:Name="cmbxEquipment" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Center" Width="132" SelectedValue="{Binding SrvCall.Equipment}" SelectedValuePath="Content" TabIndex="3">
                     <ComboBoxItem Content="Truck"/>
                     <ComboBoxItem Content="Trailer"/>
                     <ComboBoxItem Content="Car"/>
@@ -64,27 +64,27 @@
             </Grid.RowDefinitions>
             <StackPanel Grid.Column="1">
                 <Label Content="First Name"/>
-                <TextBox Text="{Binding FirstName}" MinHeight="25"/>
+                <TextBox x:Name="txtFirstName" Text="{Binding FirstName}" MinHeight="25"/>
             </StackPanel>
             <StackPanel Grid.Column="2">
                 <Label Content="Last Name"/>
-                <TextBox Text="{Binding LastName}" MinHeight="25"/>
+                <TextBox x:Name="txtLastName" Text="{Binding LastName}" MinHeight="25"/>
             </StackPanel>
             <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1">
                 <Label Content="Address"/>
-                <TextBox Text="{Binding Location.Address}" MinHeight="25"/>
+                <TextBox x:Name="txtAddress" Text="{Binding Location.Address}" MinHeight="25"/>
             </StackPanel>
             <StackPanel Grid.Column="2" Grid.Row="1">
                 <Label Content="City"/>
-                <TextBox Text="{Binding Location.City}" MinHeight="25"/>
+                <TextBox x:Name="txtCity" Text="{Binding Location.City}" MinHeight="25"/>
             </StackPanel>
             <StackPanel Grid.Column="3" Grid.Row="1">
                 <Label Content="ST"/>
-                <TextBox Text="{Binding Location.State}" MinHeight="25"/>
+                <TextBox x:Name="txtState" Text="{Binding Location.State}" MinHeight="25"/>
             </StackPanel>
             <StackPanel Grid.Column="4" Grid.Row="1">
                 <Label Content="Zip"/>
-                <TextBox Text="{Binding Location.Zip}" MinHeight="25"/>
+                <TextBox x:Name="txtZip" Text="{Binding Location.Zip}" MinHeight="25"/>
             </StackPanel>
             <Label Content="Customer:" Grid.Row="0" HorizontalAlignment="Left" Margin="3" VerticalAlignment="Top"/>
             <ScrollViewer Margin="0" Grid.Column ="5" Grid.Row="0" Grid.RowSpan="2">
@@ -103,7 +103,7 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Content="Description" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <TextBox Margin="0,0,-1,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SrvCall.Description}" TabIndex="6"/>
+            <TextBox x:Name="txtDescription" Margin="0,0,-1,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SrvCall.Description}" TabIndex="6"/>
         </Grid>
         <Grid Margin="0" Grid.Row="3" DataContext="{Binding SrvCall.CallLocation}">
             <Grid.ColumnDefinitions>
@@ -129,7 +129,7 @@
             </StackPanel>
             <StackPanel Grid.Column="2" Grid.Row="1">
                 <Label Content="Address" HorizontalAlignment="Left" VerticalAlignment="Top" />
-                <TextBox Text="{Binding Address}" MinHeight="25"/>
+                <TextBox x:Name="txtSvcLocAddress" Text="{Binding Address}" MinHeight="25"/>
             </StackPanel>
             <StackPanel Grid.Column="3" Grid.Row="1">
                 <Label Content="City" HorizontalAlignment="Left" VerticalAlignment="Top" />
